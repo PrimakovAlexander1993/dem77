@@ -11,7 +11,6 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api")
 public class StudentRestController {
-
     private final StudentService studentService;
 
     public StudentRestController(StudentService studentService) {
