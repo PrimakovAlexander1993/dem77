@@ -31,7 +31,4 @@ public class StudentRestController {
         studentService.deleteById(id);
         return "Student with " + id + "was deleted";
     }
-
-
-
 }
