@@ -1,5 +1,5 @@
 package com.example.demo.model;
 
 public class B {
-    int f;
+    String s = "Сделал в мастере";
 }
