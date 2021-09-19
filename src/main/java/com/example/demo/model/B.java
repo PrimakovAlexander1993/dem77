@@ -6,5 +6,7 @@ public class B {
 
     int x=9;
     String dd="dscs";
+    String author="Author";
+    String str="str";
 
 }
