@@ -16,7 +16,7 @@ public class StudentRestController {
     public StudentRestController(StudentService studentService) {
         this.studentService = studentService;
     }
-    //addSome Changesысмы
+    //addSome Change
     @GetMapping("/students")
     public ResponseEntity<Iterable<Student>> getAllStudents(){
         return ResponseEntity.ok().body(studentService.getAllStudents());
@@ -27,6 +27,7 @@ public class StudentRestController {
     }
     @DeleteMapping("/students/{id}")
     public String deleteStudentById(@PathVariable int id){
+
         Optional<Student> student = studentService.findById(id);
         studentService.deleteById(id);
         return "Student with " + id + "was deleted";
